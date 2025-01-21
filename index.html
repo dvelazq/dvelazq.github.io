@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dee Velazquez</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./resources/css/index.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Dee Velazquez</h1>
+        <p>Software Developer @ JHU </p>
+    </header>
+    <nav>
+        <a href="#projects">Projects</a>
+        <a href="#publications">Publications</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <div class="profile-img">
+            <!-- <img src="./resources/images/dee_D3S2490.jpg" alt="Headshot of Dee Velazquez"> -->
+        </div>
+        <div class="profile">
+            <h2>About Me</h2>
+            <p>Hello! I am a software developer at the JEFWorks Lab at Johns Hopkins University, where I combine my passion for coding, innovation, and scientific discovery to tackle some of the most exciting challenges in computational biology and genomic data science.</p>
+            <br>
+            <p>I recently graduated from Johns Hopkins University with a B.S in Computer Science and Chemical & Biomolecular Engineering. With a strong foundation in cell biology and computation and a keen interest in machine learning, computer vision, and bioinformatics, I am dedicated to developing open-source software that empowers researchers to uncover meaningful insights from complex datasets.</p>
+            <br>
+            <p>My current focus is on spatial transcriptomics, where I design and implement machine learning and statistical models to visualize and analyze high-dimensional biological data. Whether it's developing scalable pipelines, applying advanced algorithms, or collaborating across disciplines, I thrive on creating solutions that make a real-world impact.</p>
+        </div>
+    </div>
+
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="projects-list">
+            <div class="project">
+                <h3>Spatial Transcriptomics as Rasterized Image Tensors (STARIT)</h3>
+                <p>A pipeline built in R and Python to convert spatial transcriptomics data into pixel-based images for visualizing cell segmentations and RNA species distributions. Utilizes ResNet models, dimensionality reduction techniques (PCA, t-SNE), and clustering algorithms to identify subcellular RNA heterogeneity and distinguish unique cell types based on gene expression profiles. Presented at the 2024 BMES Annual Conference.</p>
+            </div>
+            <div class="project">
+                <h3>scatterbar: Proportional Data Visualization in R</h3>
+                <p>An R package designed for visualizing proportional data across spatial coordinates through scattered stacked bar plots. Built with ggplot2, dplyr, and tidyr, the package offers customizable visualizations for spatial data analysis and is published on GitHub. Featured in a peer-reviewed publication on bioRxiv, highlighting its application in spatial transcriptomics.</p>
+            </div>
+            <div class="project">
+                <h3>COVID-19 Outcome Prediction Model</h3>
+                <p>A machine learning model built using PyTorch to predict COVID-19 hospitalization and ICU admissions based on CDC surveillance data. Achieved a 94.4% PR AUC score with a Random Forest classifier through hyperparameter optimization and 3-fold cross-validation. Balanced class sizes to improve classification accuracy and reduce false positives in healthcare outcome predictions.</p>
+            </div>
+            <div class="project">
+                <h3>Fatigue Detection System for Road Safety</h3>
+                <p>A real-time drowsiness detection system using OpenCV, Mediapipe, and dlib for facial landmark recognition. Analyzes Eye Aspect Ratio (EAR) and Mouth Aspect Ratio (MAR) to classify driver states as "drowsy" or "non-drowsy." Trained on the NTHUDDD2 dataset with multiple machine learning models, achieving a peak accuracy of 70.23% and contributing to advancements in road safety technology.</p>
+            </div>
+            <div class="project">
+                <h3>OncoBot: AI-Powered Cancer Education Chatbot</h3>
+                <p>A full-stack chatbot developed to provide accessible cancer education to patients and families. Built with HTML, CSS, JavaScript, and React, featuring functionalities like dynamic chatboxes, response delay handling, and accessibility improvements. Collaborated with stakeholders to refine design and back-end features, resulting in increased user satisfaction. Showcased at Johns Hopkins Design Day.</p>
+            </div>
+            <div class="project">
+                <h3>Exploring Supermasks with Genetic Algorithms</h3>
+                <p>A project collaboration with the Universidad de Madrid Carlos exploring the Lottery Ticket Hypothesis through the development of a genetic algorithm for optimizing supermasks in convolutional neural networks. Applied to the MNIST dataset using PyTorch, achieving performance improvements of 8.5% over random guessing.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="publications" class="publications">
+        <h2>Publications</h2>
+        <ul>
+            <li>
+                <a href="https://www.biorxiv.org/content/10.1101/2024.08.14.606810v1" target="_blank">scatterbar: an R package for visualizing proportional data across spatially resolved coordinates (2024)</a>
+            </li>
+        </ul>
+    </section>
+
+    <section id="software" class="software">
+        <h2>Software</h2>
+        <p><strong>scatterbar</strong></p>
+        <img src="resources/images/scatterbar_logo_hex.png" alt="Logo of Scatterbar Software Package" width="200px">
+        <p><a href="https://github.com/JEFworks-Lab/scatterbar" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>, 
+        <em><a href="https://cran.r-project.org/web/packages/scatterbar/scatterbar.pdf" target="_blank">CRAN</a></em></p>
+    </section>
+
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <p><img src="resources/images/icons8-python-50.png" alt="Python" title="Python">
+           <img src="resources/images/icons8-r-project-64.png" alt="R" title="R">
+           <img src="resources/images/icons8-html-5-50.png" alt="HTML" title="HTML">
+           <img src="resources/images/icons8-css-logo-50.png" alt="CSS" title="CSS">
+           <img src="resources/images/icons8-javascript-logo-50.png" alt="JavaScript" title="JavaScript">
+           <img src="resources/images/icons8-java-50.png" alt="Java" title="Java">
+           <img src="resources/images/icons8-c++-50.png" alt="C++" title="C++">
+           <img src="resources/images/icons8-bash-50.png" alt="Bash" title="Bash">
+           <img src="resources/images/icons8-git-60.png" alt="Git" title="Git"></p>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <div class="contact-icons">
+            <a href="mailto:dvelazq5@jhu.edu" title="Email"><i class="fas fa-envelope"></i></a>
+            <a href="https://x.com/dee_velazquez_" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <!-- <a href="https://bsky.app/profile/deevelazquez.bsky.social" target="_blank" title="Bluesky"><i class="fas fa-butterfly"></i></a> -->
+            <a href="https://github.com/dvelazq" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/deevelazquez/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <!--<a href="/path/to/cv.pdf" target="_blank" title="CV">[CV]</a>   -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Dee Velazquez 2025. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+
