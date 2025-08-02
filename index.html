@@ -4,107 +4,441 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dee Velazquez</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="16x16" href="./resources/images/icons8-biotech-16.png"> 
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./resources/css/index.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Dee Velazquez</h1>
-        <p>Software Developer @ JHU </p>
-    </header>
     <nav>
-        <a href="#projects">Projects</a>
-        <a href="#publications">Publications</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    <div class="container">
-        <div class="profile-img"> </div>
-        <div class="profile">
-            <h2>About Me</h2>
-            <p>Hello! I am a software developer at the JEFWorks Lab at Johns Hopkins University, where I combine my passion for coding, innovation, and scientific discovery to tackle some of the most exciting challenges in computational biology and genomic data science.</p>
-            <br>
-            <p>I recently graduated from Johns Hopkins University with a B.S in Computer Science and Chemical & Biomolecular Engineering. With a strong foundation in cell biology and computation and a keen interest in machine learning, computer vision, and bioinformatics, I am dedicated to developing open-source software that empowers researchers to uncover meaningful insights from complex datasets.</p>
-            <br>
-            <p>My current focus is on spatial transcriptomics, where I design and implement machine learning and statistical models to visualize and analyze high-dimensional biological data. Whether it's developing scalable pipelines, applying advanced algorithms, or collaborating across disciplines, I thrive on creating solutions that make a real-world impact.</p>
+        <div class="nav-container">
+            <a href="#" class="logo">Dee Velazquez</a>
+            <div style="display: flex; align-items: center; gap: 2rem;">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#publications">Publications</a></li>
+                    <li><a href="#software">Software</a></li>
+                    <li><a href="#resume">CV</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button class="dark-mode-toggle" id="darkModeToggle" title="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
         </div>
-    </div>
+    </nav>
 
-    <section id="projects" class="projects">
-        <h2>Projects</h2>
-        <div class="projects-list">
-            <div class="project">
-                <h3>Spatial Transcriptomics as Rasterized Image Tensors (STARIT)</h3>
-                <p>A pipeline built in R and Python to convert spatial transcriptomics data into pixel-based images for visualizing cell segmentations and RNA species distributions. Utilizes ResNet models, dimensionality reduction techniques (PCA, t-SNE), and clustering algorithms to identify subcellular RNA heterogeneity and distinguish unique cell types based on gene expression profiles. Presented at the 2024 BMES Annual Conference.</p>
+    <section class="hero" id="about">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Dee Velazquez</h1>
+                <div class="hero-subtitle">Software Developer @ JHU</div>
+                <p class="hero-description">
+                    Leveraging my passion for programming, innovation, and scientific discovery, I tackle exciting challenges in computational biology and bioinformatics. My goal is to develop open-source machine learning, statistical, and computational software that empowers researchers to uncover meaningful insights from complex biomedical data, ultimately contributing to a deeper understanding of human health and disease. I'm committed to creating user-friendly tools with strong data visualization principles and plan to pursue a PhD to advance novel methodologies for the broader scientific community.
+                </p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-code"></i>
+                        View My Work
+                    </a>
+                    <a href="#resume" class="btn btn-secondary">
+                        <i class="fas fa-file-pdf"></i>
+                        Download Resume
+                    </a>
+                </div>
             </div>
-            <div class="project">
-                <h3>scatterbar: Proportional Data Visualization in R</h3>
-                <p>An R package designed for visualizing proportional data across spatial coordinates through scattered stacked bar plots. Built with ggplot2, dplyr, and tidyr, the package offers customizable visualizations for spatial data analysis and is published on GitHub. Featured in a peer-reviewed publication on bioRxiv, highlighting its application in spatial transcriptomics.</p>
+            <div class="hero-image">
+                <div class="profile-img"></div>
             </div>
-            <div class="project">
-                <h3>COVID-19 Outcome Prediction Model</h3>
-                <p>A machine learning model built using PyTorch to predict COVID-19 hospitalization and ICU admissions based on CDC surveillance data. Achieved a 94.4% PR AUC score with a Random Forest classifier through hyperparameter optimization and 3-fold cross-validation. Balanced class sizes to improve classification accuracy and reduce false positives in healthcare outcome predictions.</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">
+                    A showcase of my work in machine learning, deep learning, computer vision, computational biology, full-stack development, and software development
+                </p>
             </div>
-            <div class="project">
-                <h3>Fatigue Detection System for Road Safety</h3>
-                <p>A real-time drowsiness detection system using OpenCV, Mediapipe, and dlib for facial landmark recognition. Analyzes Eye Aspect Ratio (EAR) and Mouth Aspect Ratio (MAR) to classify driver states as "drowsy" or "non-drowsy." Trained on the NTHUDDD2 dataset with multiple machine learning models, achieving a peak accuracy of 70.23% and contributing to advancements in road safety technology.</p>
-            </div>
-            <div class="project">
-                <h3>OncoBot: AI-Powered Cancer Education Chatbot</h3>
-                <p>A full-stack chatbot developed to provide accessible cancer education to patients and families. Built with HTML, CSS, JavaScript, and React, featuring functionalities like dynamic chatboxes, response delay handling, and accessibility improvements. Collaborated with stakeholders to refine design and back-end features, resulting in increased user satisfaction. Showcased at Johns Hopkins Design Day.</p>
-            </div>
-            <div class="project">
-                <h3>Exploring Supermasks with Genetic Algorithms</h3>
-                <p>A project collaboration with the Universidad de Madrid Carlos exploring the Lottery Ticket Hypothesis through the development of a genetic algorithm for optimizing supermasks in convolutional neural networks. Applied to the MNIST dataset using PyTorch, achieving performance improvements of 8.5% over random guessing.</p>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3 class="project-title">Spatial Transcriptomics as Rasterized Image Tensors (STARIT)</h3>
+                    <p class="project-description">
+                        A pipeline built in R and Python to convert spatial transcriptomics data into pixel-based images for visualizing cell segmentations and RNA species distributions. Utilizes ResNet models, dimensionality reduction techniques (PCA, t-SNE), and clustering algorithms to identify subcellular RNA heterogeneity.
+                    </p>
+                </div>
+
+                <div class="project-card">
+                    <h3 class="project-title">scatterbar: Proportional Data Visualization in R</h3>
+                    <p class="project-description">
+                        An R package designed for visualizing proportional data across spatial coordinates through scattered stacked bar plots. Built with ggplot2, dplyr, and tidyr, offering customizable visualizations for spatial data analysis and published on GitHub.
+                    </p>
+                </div>
+
+                <div class="project-card">
+                    <h3 class="project-title">COVID-19 Outcome Prediction Model</h3>
+                    <p class="project-description">
+                        A machine learning model built using PyTorch to predict COVID-19 hospitalization and ICU admissions based on CDC surveillance data. Achieved a 94.4% PR AUC score with a Random Forest classifier through hyperparameter optimization and 3-fold cross-validation.
+                    </p>
+                </div>
+
+                <div class="project-card">
+                    <h3 class="project-title">Fatigue Detection System for Road Safety</h3>
+                    <p class="project-description">
+                        A real-time drowsiness detection system using OpenCV, Mediapipe, and dlib for facial landmark recognition. Analyzes Eye Aspect Ratio (EAR) and Mouth Aspect Ratio (MAR) to classify driver states, achieving 70.23% accuracy.
+                    </p>
+                </div>
+
+                <div class="project-card">
+                    <h3 class="project-title">OncoBot: AI-Powered Cancer Education Chatbot</h3>
+                    <p class="project-description">
+                        A full-stack chatbot developed to provide accessible cancer education to patients and families. Built with HTML, CSS, JavaScript, and React, featuring dynamic chatboxes, response delay handling, and accessibility improvements.
+                    </p>
+                </div>
+
+                <div class="project-card">
+                    <h3 class="project-title">Exploring Supermasks with Genetic Algorithms</h3>
+                    <p class="project-description">
+                        A collaboration with Universidad de Madrid exploring the Lottery Ticket Hypothesis through genetic algorithm development for optimizing supermasks in convolutional neural networks, achieving 8.5% performance improvements over random guessing.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="publications" class="publications">
-        <h2>Publications</h2>
-        <ul>
-            <li>
-                <a href="https://www.biorxiv.org/content/10.1101/2024.08.14.606810v1" target="_blank">scatterbar: an R package for visualizing proportional data across spatially resolved coordinates (2024)</a>
-            </li>
-        </ul>
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">Publications</h2>
+                <p class="section-subtitle">
+                    Research contributions in computational biology and bioinformatics
+                </p>
+            </div>
+            
+            <div class="publication-item">
+                <a href="https://academic.oup.com/bioinformatics/article/41/2/btaf047/7994327" target="_blank">
+                    scatterbar: an R package for visualizing proportional data across spatially resolved coordinates (2025)
+                </a>
+            </div>
+            <div class="publication-item">
+                <a href="https://www.biorxiv.org/content/10.1101/2025.05.25.654911v1" target="_blank">
+                    Spatiotemporal transcriptomic analysis of the murine kidney reveals compartment-specific changes during cold ischemic injury (2025)
+                </a>
+            </div>
+        </div>
     </section>
 
-    <section id="software" class="software">
-        <h2>Software</h2>
-        <p><strong>scatterbar</strong></p>
-        <img src="resources/images/scatterbar_logo_hex.png" alt="Logo of Scatterbar Software Package" width="200px">
-        <p><a href="https://github.com/JEFworks-Lab/scatterbar" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>, 
-        <em><a href="https://cran.r-project.org/web/packages/scatterbar/scatterbar.pdf" target="_blank">CRAN</a></em></p>
+    <section id="software">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">Software</h2>
+                <p class="section-subtitle">
+                    Open-source software projects and packages I have developed
+                </p>
+            </div>
+            
+            <div class="software-showcase">
+                <div class="software-info">
+                    <h3>scatterbar</h3>
+                    <p>An R package for visualizing proportional data across spatially resolved coordinates through scattered stacked bar plots.</p>
+                    <div class="software-links">
+                        <a href="https://github.com/JEFworks-Lab/scatterbar" target="_blank">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a href="https://cran.r-project.org/web/packages/scatterbar/scatterbar.pdf" target="_blank">
+                            <i class="fas fa-file-pdf"></i> CRAN
+                        </a>
+                    </div>
+                </div>
+                <div class="software-image">
+                    <img src="./resources/images/scatterbar_logo_hex.png" alt="Scatterbar Logo">
+                </div>
+            </div>
+        </div>
     </section>
 
     <section id="skills" class="skills">
-        <h2>Skills</h2>
-        <p><img src="resources/images/icons8-python-50.png" alt="Python" title="Python">
-           <img src="resources/images/icons8-r-project-64.png" alt="R" title="R">
-           <img src="resources/images/icons8-html-5-50.png" alt="HTML" title="HTML">
-           <img src="resources/images/icons8-css-logo-50.png" alt="CSS" title="CSS">
-           <img src="resources/images/icons8-javascript-logo-50.png" alt="JavaScript" title="JavaScript">
-           <img src="resources/images/icons8-java-50.png" alt="Java" title="Java">
-           <img src="resources/images/icons8-c++-50.png" alt="C++" title="C++">
-           <img src="resources/images/icons8-bash-50.png" alt="Bash" title="Bash">
-           <img src="resources/images/icons8-git-60.png" alt="Git" title="Git"></p>
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">Technical Expertise</h2>
+                <p class="section-subtitle">
+                    Programming languages, packages, toolkits, software, and systems I work with and am proficient in
+                </p>
+            </div>
+            
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-code category-icon"></i>
+                        Programming Languages
+                    </h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">R</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">C</span>
+                        <span class="skill-tag">Bash</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-globe category-icon"></i>
+                        Web Technologies
+                    </h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Node.js</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-chart-bar category-icon"></i>
+                        Data Science & ML
+                    </h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">OpenCV</span>
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">NumPy</span>
+                        <span class="skill-tag">Matplotlib</span>
+                        <span class="skill-tag">Seaborn</span>
+                        <span class="skill-tag">Scikit-learn</span>
+                        <span class="skill-tag">Plotly</span>
+                        <span class="skill-tag">ggplot2</span>
+                        <span class="skill-tag">dplyr</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-tools category-icon"></i>
+                        Tools & Platforms
+                    </h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Windows</span>
+                        <span class="skill-tag">Mac</span>
+                        <span class="skill-tag">Linux</span>
+                        <span class="skill-tag">Jupyter Notebooks</span>
+                        <span class="skill-tag">RStudio</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="contact" class="contact">
-        <h2>Contact</h2>
-        <div class="contact-icons">
-            <a href="mailto:dvelazq5@jhu.edu" title="Email"><i class="fas fa-envelope"></i></a>
-            <a href="https://x.com/dee_velazquez_" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
-            <!-- <a href="https://bsky.app/profile/deevelazquez.bsky.social" target="_blank" title="Bluesky"><i class="fas fa-butterfly"></i></a> -->
-            <a href="https://github.com/dvelazq" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/deevelazquez/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            <!--<a href="/path/to/cv.pdf" target="_blank" title="CV">[CV]</a>   -->
+    <section id="resume">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">Resume</h2>
+                <p class="section-subtitle">
+                    Download my full resume for detailed information about my experience and qualifications
+                </p>
+            </div>
+            
+            <div class="resume-showcase">
+                <div class="resume-preview">
+                    <div class="resume-thumbnail">
+                        <i class="fas fa-file-pdf"></i>
+                        <div class="resume-info">
+                            <h3>Dee Velazquez - Resume</h3>
+                            <p>Software Developer & Post-bacc Student</p>
+                            <span class="file-size">PDF • Updated May 2025</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="resume-actions">
+                    <a href="./resources/documents/CV_Velazquez_Dee.pdf" class="btn btn-primary" download>
+                        <i class="fas fa-download"></i>
+                        Download PDF
+                    </a>
+                    <a href="./resources/documents/CV_Velazquez_Dee.pdf" target="_blank" class="btn btn-secondary">
+                        <i class="fas fa-external-link-alt"></i>
+                        View Online
+                    </a>
+                </div>
+            </div>
+            
+            <div class="resume-highlights">
+                <div class="highlight-item">
+                    <div class="highlight-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="highlight-content">
+                        <h4>Education</h4>
+                        <p>B.S. Computer Science & Chemical Engineering<br> <br>Johns Hopkins University</p>
+                    </div>
+                </div>
+                <div class="highlight-item">
+                    <div class="highlight-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="highlight-content">
+                        <h4>Experience</h4>
+                        <p>Software Developer<br>JEFWorks Lab</p>
+                    </div>
+                </div>
+                <div class="highlight-item">
+                    <div class="highlight-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="highlight-content">
+                        <h4>Specialization</h4>
+                        <p>Computational Biology<br>Spatial Transcriptomics<br>Computer Vision<br>Deep Learning</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="section-container">
+            <div class="contact-content">
+                <div class="section-header">
+                    <h2 class="section-title">Let's Connect</h2>
+                    <p class="section-subtitle">
+                        I'm always interested in discussing new opportunities and collaborations! (◕ っ ◕✿)
+                    </p>
+                </div>
+                
+                <div class="contact-icons">
+                    <a href="mailto:dvelazq5@jhu.edu" class="contact-icon" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://x.com/dee_velazquez_" target="_blank" class="contact-icon" title="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://bsky.app/profile/deevelazquez.bsky.social" target="_blank" class="contact-icon" title="BlueSky">
+                        <i class="fa-brands fa-bluesky"></i>
+                    </a>
+                    <a href="https://github.com/dvelazq" target="_blank" class="contact-icon" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/deevelazquez/" target="_blank" class="contact-icon" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
 
     <footer>
-        <p>&copy; Dee Velazquez 2025. All Rights Reserved.</p>
+        <p>&copy; 2025 Dee Velazquez. All Rights Reserved.</p>
     </footer>
+
+    <script>
+        // Navigation background on scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.style.background = 'rgba(255, 255, 255, 0.98)';
+                nav.style.boxShadow = '0 4px 6px -1px rgb(0 0 0 / 0.1)';
+            } else {
+                nav.style.background = 'rgba(255, 255, 255, 0.95)';
+                nav.style.boxShadow = 'none';
+            }
+        });
+
+        // Enhanced Navigation background on scroll (replaces existing function)
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            const isDarkMode = document.documentElement.getAttribute('data-theme') === 'dark';
+            
+            if (window.scrollY > 100) {
+                nav.classList.add('scrolled');
+                if (isDarkMode) {
+                    nav.style.background = 'rgba(15, 23, 42, 0.98)';
+                    nav.style.boxShadow = '0 4px 6px -1px rgb(0 0 0 / 0.3)';
+                } else {
+                    nav.style.background = 'rgba(255, 255, 255, 0.98)';
+                    nav.style.boxShadow = '0 4px 6px -1px rgb(0 0 0 / 0.1)';
+                }
+            } else {
+                nav.classList.remove('scrolled');
+                if (isDarkMode) {
+                    nav.style.background = 'rgba(15, 23, 42, 0.95)';
+                    nav.style.boxShadow = 'none';
+                } else {
+                    nav.style.background = 'rgba(255, 255, 255, 0.95)';
+                    nav.style.boxShadow = 'none';
+                }
+            }
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Enhanced Dark Mode Toggle
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const darkModeIcon = darkModeToggle.querySelector('i');
+
+        // Check for saved theme preference or default to light mode
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        document.documentElement.setAttribute('data-theme', currentTheme);
+
+        // Update icon based on current theme
+        function updateDarkModeIcon(theme) {
+            if (theme === 'dark') {
+                darkModeIcon.className = 'fas fa-sun';
+            } else {
+                darkModeIcon.className = 'fas fa-moon';
+            }
+        }
+
+        updateDarkModeIcon(currentTheme);
+
+        darkModeToggle.addEventListener('click', () => {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            document.documentElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            
+            // Update icon
+            updateDarkModeIcon(newTheme);
+            
+            // Trigger scroll event to update navigation styling
+            window.dispatchEvent(new Event('scroll'));
+        });
+
+        // Add animation classes on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-on-scroll');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.project-card, .publication-item, .software-showcase, .skill-category, .resume-showcase, .highlight-item').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
 </body>
 </html>
 
