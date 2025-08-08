@@ -117,16 +117,143 @@
                     Research contributions in computational biology and bioinformatics
                 </p>
             </div>
-            
-            <div class="publication-item">
-                <a href="https://academic.oup.com/bioinformatics/article/41/2/btaf047/7994327" target="_blank">
-                    scatterbar: an R package for visualizing proportional data across spatially resolved coordinates (2025)
-                </a>
+
+            <!-- Publication Statistics -->
+            <div class="publication-stats">
+                <div class="stat-item">
+                    <div class="stat-number">2</div>
+                    <div class="stat-label">Total Publications</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">1</div>
+                    <div class="stat-label">Published</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">1</div>
+                    <div class="stat-label">Preprint</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">2025</div>
+                    <div class="stat-label">Latest Year</div>
+                </div>
             </div>
-            <div class="publication-item">
-                <a href="https://www.biorxiv.org/content/10.1101/2025.05.25.654911v1" target="_blank">
-                    Spatiotemporal transcriptomic analysis of the murine kidney reveals compartment-specific changes during cold ischemic injury (2025)
-                </a>
+
+            <!-- Filter Controls -->
+            <div class="publication-filters">
+                <button class="filter-btn active" data-filter="all">All Publications</button>
+                <button class="filter-btn" data-filter="published">Published</button>
+                <button class="filter-btn" data-filter="preprint">Preprint</button>
+                <button class="filter-btn" data-filter="first-author">First Author</button>
+            </div>
+
+            <!-- Publications Grid -->
+            <div class="publications-grid">
+                <!-- Published Paper -->
+                <article class="publication-card animate-on-scroll" data-status="published" data-author="first">
+                    <div class="publication-header">
+                        <div class="publication-badges">
+                            <span class="status-badge status-published">Published</span>
+                            <span class="author-badge author-first">First Author</span>
+                        </div>
+                    </div>
+                    
+                    <h3 class="publication-title">
+                        <a href="https://academic.oup.com/bioinformatics/article/41/2/btaf047/7994327" target="_blank">
+                            scatterbar: an R package for visualizing proportional data across spatially resolved coordinates
+                        </a>
+                    </h3>
+                    
+                    <div class="publication-meta">
+                        <div class="meta-item">
+                            <i class="fas fa-book"></i>
+                            <span class="journal-name">Bioinformatics (Oxford Academic)</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span class="publication-year">2025</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-tag"></i>
+                            <span>Volume 41, Issue 2</span>
+                        </div>
+                    </div>
+                    
+                    <div class="publication-authors">
+                        <span class="author-highlight">Dee Velazquez</span>, Jean Fan†
+                        <br><small style="color: var(--text-muted); font-style: italic;">†Corresponding author</small>
+                    </div>
+                    
+                    <div class="publication-abstract">
+                        An R package designed for visualizing proportional data across spatial coordinates through scattered stacked bar plots. Built with ggplot2, dplyr, and tidyr, offering customizable visualizations for spatial data analysis and computational biology research.
+                    </div>
+                    
+                    <div class="publication-actions">
+                        <a href="https://academic.oup.com/bioinformatics/article/41/2/btaf047/7994327" target="_blank" class="action-btn btn-primary">
+                            <i class="fas fa-external-link-alt"></i>
+                            View Paper
+                        </a>
+                        <a href="https://github.com/JEFworks-Lab/scatterbar" target="_blank" class="action-btn btn-secondary">
+                            <i class="fab fa-github"></i>
+                            Code
+                        </a>
+                        <a href="https://cran.r-project.org/web/packages/scatterbar/scatterbar.pdf" target="_blank" class="action-btn btn-secondary">
+                            <i class="fas fa-download"></i>
+                            CRAN
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Preprint Paper -->
+                <article class="publication-card animate-on-scroll" data-status="preprint" data-author="middle">
+                    <div class="publication-header">
+                        <div class="publication-badges">
+                            <span class="status-badge status-preprint">Preprint</span>
+                            <span class="author-badge author-middle">Co-Author</span>
+                        </div>
+                    </div>
+                    
+                    <h3 class="publication-title">
+                        <a href="https://www.biorxiv.org/content/10.1101/2025.05.25.654911v1" target="_blank">
+                            Spatiotemporal transcriptomic analysis of the murine kidney reveals compartment-specific changes during cold ischemic injury
+                        </a>
+                    </h3>
+                    
+                    <div class="publication-meta">
+                        <div class="meta-item">
+                            <i class="fas fa-flask"></i>
+                            <span class="journal-name">bioRxiv</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span class="publication-year">2025</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-hashtag"></i>
+                            <span>DOI: 10.1101/2025.05.25.654911</span>
+                        </div>
+                    </div>
+                    
+                    <div class="publication-authors">
+                         Srujan Singh, Shishir Kumar Patel, Ryo Matsuura, <span class="author-highlight">Dee Velazquez</span>, Zhaoli Sun, Sanjeev Noel, Hamid
+                            Rabb†, Jean Fan†
+                        <br><small style="color: var(--text-muted); font-style: italic;">†Corresponding author</small>
+                    </div>
+                    
+                    <div class="publication-abstract">
+                        A comprehensive spatiotemporal analysis investigating transcriptomic changes in murine kidney tissue during cold ischemic injury, revealing compartment-specific molecular responses and providing insights into organ preservation strategies for transplantation.
+                    </div>
+                    
+                    <div class="publication-actions">
+                        <a href="https://www.biorxiv.org/content/10.1101/2025.05.25.654911v1" target="_blank" class="action-btn btn-primary">
+                            <i class="fas fa-external-link-alt"></i>
+                            View Preprint
+                        </a>
+                        <a href="https://zenodo.org/records/15359609" target="_blank" class="action-btn btn-secondary">
+                            <i class="fas fa-chart-bar"></i>
+                            Zenodo
+                        </a>
+                    </div>
+                </article>
             </div>
         </div>
     </section>
@@ -339,18 +466,6 @@
         // Navigation background on scroll
         window.addEventListener('scroll', () => {
             const nav = document.querySelector('nav');
-            if (window.scrollY > 100) {
-                nav.style.background = 'rgba(255, 255, 255, 0.98)';
-                nav.style.boxShadow = '0 4px 6px -1px rgb(0 0 0 / 0.1)';
-            } else {
-                nav.style.background = 'rgba(255, 255, 255, 0.95)';
-                nav.style.boxShadow = 'none';
-            }
-        });
-
-        // Enhanced Navigation background on scroll (replaces existing function)
-        window.addEventListener('scroll', () => {
-            const nav = document.querySelector('nav');
             const isDarkMode = document.documentElement.getAttribute('data-theme') === 'dark';
             
             if (window.scrollY > 100) {
@@ -435,8 +550,62 @@
             });
         }, observerOptions);
 
-        document.querySelectorAll('.project-card, .publication-item, .software-showcase, .skill-category, .resume-showcase, .highlight-item').forEach(el => {
+        document.querySelectorAll('.project-card, .publication-item, .software-showcase, .skill-category, .resume-showcase, .highlight-item, .publication-card, .publication-stats').forEach(el => {
             observer.observe(el);
+        });
+
+        // Enhanced Publications Section JavaScript
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const publicationCards = document.querySelectorAll('.publication-card');
+
+            // Only initialize if elements exist
+            if (filterBtns.length > 0 && publicationCards.length > 0) {
+                filterBtns.forEach(btn => {
+                    btn.addEventListener('click', () => {
+                        // Remove active class from all buttons
+                        filterBtns.forEach(b => b.classList.remove('active'));
+                        // Add active class to clicked button
+                        btn.classList.add('active');
+                        
+                        const filter = btn.dataset.filter;
+                        
+                        publicationCards.forEach(card => {
+                            if (filter === 'all') {
+                                card.style.display = 'block';
+                            } else if (filter === 'first-author') {
+                                card.style.display = card.dataset.author === 'first' ? 'block' : 'none';
+                            } else {
+                                card.style.display = card.dataset.status === filter ? 'block' : 'none';
+                            }
+                        });
+
+                        // Add animation to visible cards
+                        setTimeout(() => {
+                            const visibleCards = Array.from(publicationCards).filter(card => 
+                                card.style.display !== 'none'
+                            );
+                            visibleCards.forEach((card, index) => {
+                                card.style.animationDelay = `${index * 0.1}s`;
+                                card.classList.remove('animate-on-scroll');
+                                void card.offsetWidth; // Trigger reflow
+                                card.classList.add('animate-on-scroll');
+                            });
+                        }, 50);
+                    });
+                });
+            }
+
+            // Add smooth scroll behavior for publication links
+            document.querySelectorAll('.publication-title a').forEach(link => {
+                link.addEventListener('click', function(e) {
+                    // Add a subtle animation when clicking external links
+                    this.style.transform = 'scale(0.98)';
+                    setTimeout(() => {
+                        this.style.transform = 'scale(1)';
+                    }, 150);
+                });
+            });
         });
     </script>
 </body>
